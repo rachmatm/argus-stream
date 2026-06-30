@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+database.json
+frontend/dist/
+frontend/wailsjs/
+frontend/node_modules/
+*.exe
+build/
+dist/
+
+# Model and build artifacts
+yolov8n.pt
+face-track-live.zip
+detection_engine.spec
+
+# Local env overrides - keep `.env.example` committed, ignore real values
+.env

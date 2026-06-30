@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+  }
+  #controls {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+  }
+  input {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: white;
+    border-radius: 4px;
+  }
+  button {
+    padding: 8px 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  canvas {
+    border: 2px solid #334155;
+    background: #000;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);
+  }
+  #counter {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #22c55e;
+  }
+</style>
+</head>
+<body>
+  <div id="controls">
+    <input type="text" id="hlsInput" placeholder="Enter HLS stream playlist URL (.m3u8)">
+    <button id="connectBtn">Start Pipeline Feed</button>
+  </div>
+  <canvas id="viewport" width="640" height="480"></canvas>
+  <div id="counter">Objects detected: 0</div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
